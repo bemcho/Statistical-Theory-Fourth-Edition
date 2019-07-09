@@ -9,7 +9,7 @@ ans =  factorial(big(100))/(factorial(big(97))*factorial(100-97))
 #d  12 choose 4,3,5 -> 27720
 ans =  factorial(12)/(factorial(4)*factorial(3)*factorial(5))
 #e (n)₃ -> n³-3n²+2n as n!/(n-3)! == n(n-1)(n-2)(̶n̶-̶3̶)̶!̶/(̶n̶-̶3̶)̶!̶ ==  n(n-1)(n-2)
-#d n choose 3 -> ⅙ n³-3n²+2n when  n!\3!(n-3)! == from #e n!== n³-3n²+2n and 3!(n-3)! == 6
+#d n choose 3 -> ⅙ n³-3n²+2n where  n!\3!(n-3)! ==  n(n-1)(n-2)(̶n̶-̶3̶)̶!̶/3!(̶n̶-̶3̶)̶!̶ == n³-3n²+2n/3!
 
 #1-2 A function assigns a value from a range of k values to each point in a domain of m points. How many distinct functions can be defined?
 #from(nᵏ) k posible states of m items == kᵐ
