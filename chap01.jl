@@ -40,4 +40,59 @@ ans = factorial(10)/(factorial(2)*factorial(8)) + factorial(10)/(factorial(1)*fa
 ans = factorial(10)/(factorial(5)*factorial(5))
 
 #d Of the sequences in (c), how many have at least four +’s in a row?
-ans = factorial(10)/(2^4-1)^10
+ans = missing
+
+#c Of the sequences in (c), how many have exactly two +’s to the left of the middle?
+ans = missing
+
+# 1-6 Three men and three women are to be seated in a row.
+#a In how many different ways can this be done with no other restriction?
+ans = missing
+
+#b with men and women alternating?
+ans = missing
+
+#c with the men sitting together and the women sitting together? so that two specified people sit together?
+ans = missing
+
+# 1-7 Find the number of ways
+#a of arranging six diplomats to be seated around a round table.
+ans = missing
+
+#b of arranging six keys on a ring. [Assume in (a) that there is no “head” of the table, and in (b) that what counts is which key is between which two keys.]
+ans = missing
+
+# 1-8 A deck of playing cards includes 13 cards (ace, king, queen, jack, 10, 9, ..., 2) in each of two black suits (spades, clubs) and each of two red suits (hearts, diamonds).
+#a How many distinct poker hands of five cards can be dealt?
+ans = factorial(big(52))/(factorial(5)*factorial(big(52-5)))
+
+#b How many of the hands in (a) are all hearts?
+ans = (factorial(big(13))/(factorial(5)*factorial(13-5)))
+
+#c How many of the hands in (a) are “straights”—include five cards that can be put in an unbroken sequence (e.g., 8, 9, 10, jack, queen)?
+ans = missing
+
+#d How many of the hands in (c) are all of the same suit? How many of the hands in (a) include four cards of the same denomination (“four of a kind”)?
+ans = missing
+
+# 1-9 In one state lottery, players try to match six numbers drawn without replacement from the integers 1 to 44. Verify the published report that there are about seven million combinations.
+ans = factorial(big(44))/(factorial(6)*factorial(big(44-6)))
+
+# 1-10 A delegation of three of the ten members of a city council is to be chosen to represent the council at a convention.
+#a In how many ways can the delegation be chosen?
+ans = factorial(10)/(factorial(3)*factorial(10-3))
+
+#b can it be chosen, if two particular members refuse to go together?
+ans = (factorial(10)/(factorial(3)*factorial(10-3))) - 2^3
+
+#c can it be chosen if two certain members will either both go or neither?
+ans = (factorial(10)/(factorial(3)*factorial(10-3)) - 2^3) -  factorial(10)/(factorial(2)*factorial(10-2)) -3
+
+# 1-11 In how many ways can a group of eight individuals be divided into
+#a subcommittees of sizes three, three, and two (with distinct tasks)?
+ans = factorial(8)/(factorial(3)*factorial(3)*factorial(2))
+
+#b four pairs, the individuals in a pair to play each other in tennis, on four indistinguishable tennis courts?
+ans = (factorial(8)/(factorial(2)*factorial(2)*factorial(2)*factorial(2))) / factorial(4)
+
+
